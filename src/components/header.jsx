@@ -4,6 +4,15 @@ export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/eq0s1atl_K0?si=b22Mi4tpdj86WAJ5&autoplay=1&mute=1&loop=1&playlist=eq0s1atl_K0"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Background Video"
+          ></iframe>
+        </div>
         <div className="overlay">
           <div className="container">
             <div className="row">
@@ -18,7 +27,7 @@ export const Header = (props) => {
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   Learn More
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>

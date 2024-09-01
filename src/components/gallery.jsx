@@ -2,6 +2,7 @@ import { Image } from "./image";
 import React from "react";
 
 export const Gallery = (props) => {
+  const colors = ["#0088FE", "#00C49F", "#FFBB28"];
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
@@ -30,6 +31,11 @@ export const Gallery = (props) => {
               : "Loading..."}
           </div>
         </div>
+        <div className="slideshowSlider">
+        {colors.map((backgroundColor, index) => (
+          <div className="slide" key={index} style={{ backgroundColor }}/>
+        ))}
+      </div>
       </div>
     </div>
   );
